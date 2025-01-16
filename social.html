@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applied Physio</title>
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+      <div class="text-xl font-bold text-cyan-800">The Applied <span class="text-yellow-500">Physio</span></div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="/" data-link class="text-gray-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Contact</a
+          >
+          <a
+            href="blog.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Blog</a
+          >
+          <a
+            href="social.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Social Media</a
+          >
+        </nav>
+        <button class="md:hidden" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+        <div class="container mx-auto px-4 py-4 space-y-4">
+          <a href="/" data-link class="block text-gray-600">Home</a>
+          <a href="services.html" data-link class="block text-gray-600"
+            >Services</a
+          >
+          <a href="about.html" data-link class="block text-gray-600">About</a>
+          <a href="contact.html" data-link class="block text-gray-600"
+            >Contact</a
+          >
+          <a href="blog.html" data-link class="block text-gray-600">Blog</a>
+          <a href="social.html" data-link class="block text-gray-600"
+            >Social Media</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="root" class="pt-24">
+      <!-- Social Media Hub -->
+      <section class="pt-24 pb-12">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold text-center mb-12">Connect With Us</h1>
+
+          <!-- Social Media Navigation -->
+          <div class="flex justify-center mb-12">
+            <nav class="inline-flex rounded-lg bg-white shadow-md p-1">
+              <button
+                onclick="showTab('facebook')"
+                class="px-6 py-2 rounded-lg text-sm font-medium transition social-tab active"
+              >
+                <i class="fab fa-facebook text-blue-600 mr-2"></i>Facebook
+              </button>
+              <button
+                onclick="showTab('instagram')"
+                class="px-6 py-2 rounded-lg text-sm font-medium transition social-tab"
+              >
+                <i class="fab fa-instagram text-pink-600 mr-2"></i>Instagram
+              </button>
+              <button
+                onclick="showTab('youtube')"
+                class="px-6 py-2 rounded-lg text-sm font-medium transition social-tab"
+              >
+                <i class="fab fa-youtube text-red-600 mr-2"></i>YouTube
+              </button>
+            </nav>
+          </div>
+
+          <!-- Facebook Feed -->
+          <div id="facebook" class="social-content active">
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Facebook Post 1 -->
+              <div
+                class="fb-post"
+                data-href="https://www.facebook.com/20531316728/posts/10154009990506729/"
+                data-width="500"
+              ></div>
+
+              <!-- Facebook Page Plugin -->
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/facebook"
+                data-tabs="timeline"
+                data-width="500"
+                data-height="600"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/facebook"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/facebook">Facebook</a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram Feed -->
+          <div id="instagram" class="social-content hidden">
+            <div class="grid md:grid-cols-3 gap-4">
+              <!-- Instagram Embed -->
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/example/"
+                data-instgrm-version="14"
+              ></blockquote>
+              <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+          </div>
+
+          <!-- YouTube Feed -->
+          <div id="youtube" class="social-content hidden">
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- YouTube Video 1 -->
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/example"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="w-full h-[300px]"
+                >
+                </iframe>
+              </div>
+              <!-- YouTube Video 2 -->
+              <div class="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/example2"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="w-full h-[300px]"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Stats -->
+      <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-3 gap-8">
+            <div class="text-center">
+              <i class="fab fa-facebook text-4xl text-blue-600 mb-4"></i>
+              <p class="text-2xl font-bold mb-2">10K+</p>
+              <p class="text-gray-600">Followers</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-instagram text-4xl text-pink-600 mb-4"></i>
+              <p class="text-2xl font-bold mb-2">15K+</p>
+              <p class="text-gray-600">Followers</p>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-youtube text-4xl text-red-600 mb-4"></i>
+              <p class="text-2xl font-bold mb-2">5K+</p>
+              <p class="text-gray-600">Subscribers</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <!-- Facebook SDK -->
+        <div id="fb-root"></div>
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+        ></script>
+      </section>
+
+      <script>
+        function toggleMenu() {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        }
+
+        function showTab(tabName) {
+          // Hide all content
+          document.querySelectorAll(".social-content").forEach((content) => {
+            content.classList.add("hidden");
+          });
+
+          // Show selected content
+          document.getElementById(tabName).classList.remove("hidden");
+
+          // Update tab styles
+          document.querySelectorAll(".social-tab").forEach((tab) => {
+            tab.classList.remove("bg-gray-100");
+          });
+          event.currentTarget.classList.add("bg-gray-100");
+        }
+
+        // Style for active social tab
+        document.addEventListener("DOMContentLoaded", function () {
+          const tabs = document.querySelectorAll(".social-tab");
+          tabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              tabs.forEach((t) => t.classList.remove("bg-gray-100"));
+              this.classList.add("bg-gray-100");
+            });
+          });
+        });
+      </script>
+
+      <style>
+        .social-tab {
+          transition: all 0.3s ease;
+        }
+        .social-tab:hover {
+          background-color: #f3f4f6;
+        }
+        .social-tab.active {
+          background-color: #f3f4f6;
+        }
+      </style>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Applied Physio</h3>
+            <p class="text-gray-400">Professional physiotherapy services</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" data-link class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Manual Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Sports Rehabilitation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Physical Therapy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Connect</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+        <p>&copy; 2025 Applied Physio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applied Physio</title>
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+      <div class="text-xl font-bold text-cyan-800">The Applied <span class="text-yellow-500">Physio</span></div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="/" data-link class="text-gray-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Contact</a
+          >
+          <a
+            href="blog.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Blog</a
+          >
+          <a
+            href="social.html"
+            data-link
+            class="text-gray-600 hover:text-blue-600"
+            >Social Media</a
+          >
+        </nav>
+        <button class="md:hidden" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+        <div class="container mx-auto px-4 py-4 space-y-4">
+          <a href="/" data-link class="block text-gray-600">Home</a>
+          <a href="services.html" data-link class="block text-gray-600"
+            >Services</a
+          >
+          <a href="about.html" data-link class="block text-gray-600">About</a>
+          <a href="contact.html" data-link class="block text-gray-600"
+            >Contact</a
+          >
+          <a href="blog.html" data-link class="block text-gray-600">Blog</a>
+          <a href="social.html" data-link class="block text-gray-600"
+            >Social Media</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="root" class="pt-24">
+      <!-- Featured Post -->
+      <section class="pt-24 pb-12">
+        <div class="container mx-auto px-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:flex">
+              <div class="md:w-1/2">
+                <img
+                  src="https://img.freepik.com/premium-vector/character-flat-drawing-physiotherapy-rehabilitation-isometric-composition-with-medical-specialist-helping-man-patient-massage-leg-with-rope-healthcare-hospital-cartoon-design-vector-illustration_620206-4841.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
+                  alt="Featured Post"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="md:w-1/2 p-8">
+                <span class="text-blue-600 font-semibold">Featured</span>
+                <h1 class="text-3xl font-bold mt-2 mb-4">
+                  Understanding Physical Therapy: A Comprehensive Guide
+                </h1>
+                <p class="text-gray-600 mb-4">
+                  Learn about the fundamentals of physical therapy and how it
+                  can help improve your quality of life.
+                </p>
+                <div class="flex items-center mb-6">
+                  <img
+                    src="cm.jpg"
+                    alt="Author"
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div class="ml-3">
+                    <p class="font-semibold">Chandra Sekhar Mukherjee</p>
+                    <p class="text-gray-500 text-sm">
+                      Posted on January 15, 2024
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Grid -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="https://img.freepik.com/free-vector/workplace-stretches-cartoo-icons-set-with-people-having-exercises-office-isolated-vector-illustration_1284-78247.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
+                alt="Blog Post"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <span
+                    class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Exercise</span
+                  >
+                  <span class="text-gray-500 text-sm ml-4">5 min read</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2">
+                  10 Essential Stretches for Office Workers
+                </h2>
+                <p class="text-gray-600 mb-4">
+                  Discover simple yet effective stretches you can do at your
+                  desk...
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="cm.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full"
+                    />
+                    <span class="ml-2 text-sm text-gray-600"
+                      >By Chandra Sekhar Mukherjee</span
+                    >
+                  </div>
+                  <span class="text-gray-500 text-sm">Jan 10, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="https://img.freepik.com/free-vector/gynecology-consultation-illustration_23-2148658914.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
+                alt="Blog Post"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <span
+                    class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Recovery</span
+                  >
+                  <span class="text-gray-500 text-sm ml-4">8 min read</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2">
+                  Post-Surgery Recovery Tips
+                </h2>
+                <p class="text-gray-600 mb-4">
+                  Expert advice on how to optimize your recovery after
+                  surgery...
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="cm.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full"
+                    />
+                    <span class="ml-2 text-sm text-gray-600"
+                      >By Chandra Sekhar Mukherjee</span
+                    >
+                  </div>
+                  <span class="text-gray-500 text-sm">Jan 8, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src="https://img.freepik.com/free-vector/gradient-background-world-health-day-celebration_23-2150223425.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
+                alt="Blog Post"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <span
+                    class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Wellness</span
+                  >
+                  <span class="text-gray-500 text-sm ml-4">6 min read</span>
+                </div>
+                <h2 class="text-xl font-bold mb-2">
+                  The Benefits of Regular Physical Activity
+                </h2>
+                <p class="text-gray-600 mb-4">
+                  Learn how regular exercise can improve your overall health...
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <img
+                      src="cm.jpg"
+                      alt="Author"
+                      class="w-8 h-8 rounded-full"
+                    />
+                    <span class="ml-2 text-sm text-gray-600"
+                      >By Chandra Sekhar Mukherjee</span
+                    >
+                  </div>
+                  <span class="text-gray-500 text-sm">Jan 5, 2024</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="py-12 bg-blue-600">
+        <div class="container mx-auto px-4">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">
+              Subscribe to Our Newsletter
+            </h2>
+            <p class="text-blue-100 mb-6">
+              Get the latest articles and health tips delivered to your inbox.
+            </p>
+            <form class="flex flex-col md:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-1 px-4 py-3 rounded-full"
+              />
+              <button
+                type="submit"
+                class="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Applied Physio</h3>
+            <p class="text-gray-400">Professional physiotherapy services</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" data-link class="text-gray-400 hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Manual Therapy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Sports Rehabilitation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  data-link
+                  class="text-gray-400 hover:text-white"
+                  >Physical Therapy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Connect</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+        <p>&copy; 2025 Applied Physio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
