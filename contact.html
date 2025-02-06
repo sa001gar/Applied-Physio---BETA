@@ -3,21 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Applied Physio</title>
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>
+      Contact The Applied Physio | Best Physiotherapy Clinic in Durgapur
+    </title>
+    <meta
+      name="description"
+      content="Need physiotherapy in Durgapur? Contact The Applied Physio for expert treatment. Call us, email us, or visit our clinic for the best physiotherapy care."
+    />
+    <meta
+      name="keywords"
+      content="Contact Physiotherapist in Durgapur, Best Physio Near Me, Physiotherapy Clinic Phone Number, Physiotherapy Appointment, Rehab Center Contact"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta for Social Media -->
+    <meta
+      property="og:title"
+      content="Best Physiotherapy in Durgapur | The Applied Physio"
+    />
+    <meta
+      property="og:description"
+      content="Looking for expert physiotherapy in Durgapur? The Applied Physio provides top-notch therapy for pain relief, recovery, and mobility enhancement."
+    />
+    <meta property="og:image" content="https://appliedphysio.in/logo.png" />
+    <meta property="og:url" content="https://appliedphysio.in" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Applied Physio" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "The Applied Physio",
+        "url": "https://appliedphysio.in",
+        "logo": "https://appliedphysio.in/logo.png",
+        "image": "https://appliedphysio.in/logo.jpg",
+        "description": "The Applied Physio in Durgapur offers expert physiotherapy treatment for pain relief, rehabilitation, and sports injuries.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "New City Pharmacy, Nachan Road
+          Benachity Bazar, Beside:- Bata Showroom
+          Durgapur, West Bengal",
+          "addressLocality": "Durgapur",
+          "addressRegion": "West Bengal",
+          "postalCode": "713216",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 95635 91505",
+          "contactType": "customer service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/theappliedphysio",
+          "https://www.instagram.com/theappliedphysio",
+          "https://x.com/theappliedphysio"
+          "https://youtube.com/theappliedphysio"
+        ]
+      }
+    </script>
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
+
   <body class="bg-white">
     <!-- Header -->
     <header class="fixed w-full bg-white shadow-sm z-50">
       <div
         class="container mx-auto px-4 py-4 flex justify-between items-center"
       >
-      <div class="text-xl font-bold text-cyan-800">The Applied <span class="text-yellow-500">Physio</span></div>
+        <div class="text-xl font-bold text-cyan-800">
+          The Applied <span class="text-yellow-500">Physio</span>
+        </div>
         <nav class="hidden md:flex space-x-6">
           <a href="/" data-link class="text-gray-600 hover:text-blue-600"
             >Home</a
@@ -156,6 +218,33 @@
                       <option value="pain-management">Pain Management</option>
                     </select>
                   </div>
+                  
+                  <div>
+                    <label
+                      for="date"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Preferred Date</label
+                    >
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+
                   <div>
                     <label
                       for="message"
@@ -189,8 +278,8 @@
                       <div>
                         <p class="font-medium">Address</p>
                         <p class="text-gray-600">
-                          New City Pharmacy, Nachan Road<br>Benachity Bazar, Beside:- Bata Showroom<br />Durgapur,
-                          West Bengal
+                          New City Pharmacy, Nachan Road<br />Benachity Bazar,
+                          Beside:- Bata Showroom<br />Durgapur, West Bengal
                         </p>
                       </div>
                     </div>
@@ -205,7 +294,7 @@
                       <i class="fas fa-envelope mt-1 text-blue-600"></i>
                       <div>
                         <p class="font-medium">Email</p>
-                        <p class="text-gray-600">theappliedphysio@gmail.com</p>
+                        <p class="text-gray-600">contact@appliedphysio.in</p>
                       </div>
                     </div>
                   </div>
@@ -314,7 +403,7 @@
                 ><i class="fab fa-facebook"></i
               ></a>
               <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-twitter"></i
+                ><i class="fab fa-youtube"></i
               ></a>
               <a href="#" class="text-gray-400 hover:text-white"
                 ><i class="fab fa-instagram"></i
@@ -328,7 +417,7 @@
         <div
           class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
         >
-        <p>&copy; 2025 Applied Physio. All rights reserved.</p>
+          <p>&copy; 2025 Applied Physio. All rights reserved.</p>
         </div>
       </div>
     </footer>
