@@ -153,7 +153,13 @@
             <div class="grid md:grid-cols-2 gap-12">
               <!-- Contact Form -->
               <div class="bg-white rounded-lg shadow-md p-6">
-                <form class="space-y-6">
+                <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="662ca92f-e70b-4dac-9fae-03fd5ea922f4">
+                  <input type="hidden" name="redirect" value="https://appliedphysio.in/thank_you.html">
+                  <input type="hidden" name="subject" value="New Submission from Applied Physio Website">
+                  <input type="hidden" name="from_name" value="The Applied Physio">
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                   <div>
                     <label
                       for="name"
