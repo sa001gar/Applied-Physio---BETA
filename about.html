@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - The Applied Physio | Best Physiotherapists in Durgapur</title>
-<meta name="description" content="Learn about The Applied Physio, the best physiotherapy clinic in Durgapur, providing expert care for pain relief, rehabilitation, and injury recovery.">
-<meta name="keywords" content="About Physiotherapy in Durgapur, Best Physiotherapist in Durgapur, Physical Therapy Experts, Rehabilitation Specialists, Trusted Physio Clinic">
-<meta name="robots" content="index, follow">
 
- <!-- Open Graph Meta for Social Media -->
- <meta
- property="og:title"
- content="Best Physiotherapy in Durgapur | The Applied Physio"
-/>
-<meta
- property="og:description"
- content="Looking for expert physiotherapy in Durgapur? The Applied Physio provides top-notch therapy for pain relief, recovery, and mobility enhancement."
-/>
-<meta property="og:image" content="https://appliedphysio.in/logo.png" />
-<meta property="og:url" content="https://appliedphysio.in" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="The Applied Physio">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - The Applied Physio | Best Physiotherapists in Durgapur</title>
+  <meta name="description"
+    content="Learn about The Applied Physio, the best physiotherapy clinic in Durgapur, providing expert care for pain relief, rehabilitation, and injury recovery.">
+  <meta name="keywords"
+    content="About Physiotherapy in Durgapur, Best Physiotherapist in Durgapur, Physical Therapy Experts, Rehabilitation Specialists, Trusted Physio Clinic">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta for Social Media -->
+  <meta property="og:title" content="Best Physiotherapy in Durgapur | The Applied Physio" />
+  <meta property="og:description"
+    content="Looking for expert physiotherapy in Durgapur? The Applied Physio provides top-notch therapy for pain relief, recovery, and mobility enhancement." />
+  <meta property="og:image" content="https://appliedphysio.in/logo.png" />
+  <meta property="og:url" content="https://appliedphysio.in" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Applied Physio">
 
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
  {
    "@context": "https://schema.org",
    "@type": "MedicalClinic",
@@ -56,217 +54,158 @@
  }
  </script>
 
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-white">
-    <!-- Header -->
-    <header class="fixed w-full bg-white shadow-sm z-50">
-      <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
-      >
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="fixed w-full bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <div class="text-xl font-bold text-cyan-800">The Applied <span class="text-yellow-500">Physio</span></div>
-        <nav class="hidden md:flex space-x-6">
-          <a href="/" data-link class="text-gray-600 hover:text-blue-600"
-            >Home</a
-          >
-          <a
-            href="services.html"
-            data-link
-            class="text-gray-600 hover:text-blue-600"
-            >Services</a
-          >
-          <a
-            href="about.html"
-            data-link
-            class="text-gray-600 hover:text-blue-600"
-            >About</a
-          >
-          <a
-            href="contact.html"
-            data-link
-            class="text-gray-600 hover:text-blue-600"
-            >Contact</a
-          >
-          <a
-            href="blog.html"
-            data-link
-            class="text-gray-600 hover:text-blue-600"
-            >Blog</a
-          >
-          <a
-            href="social.html"
-            data-link
-            class="text-gray-600 hover:text-blue-600"
-            >Social Media</a
-          >
-        </nav>
-        <button class="md:hidden" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
+      <nav class="hidden md:flex space-x-6">
+        <a href="/" data-link class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="services.html" data-link class="text-gray-600 hover:text-blue-600">Services</a>
+        <a href="about.html" data-link class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="contact.html" data-link class="text-gray-600 hover:text-blue-600">Contact</a>
+        <a href="blog.html" data-link class="text-gray-600 hover:text-blue-600">Blog</a>
+        <a href="social.html" data-link class="text-gray-600 hover:text-blue-600">Social Media</a>
+      </nav>
+      <button class="md:hidden" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+      <div class="container mx-auto px-4 py-4 space-y-4">
+        <a href="/" data-link class="block text-gray-600">Home</a>
+        <a href="services.html" data-link class="block text-gray-600">Services</a>
+        <a href="about.html" data-link class="block text-gray-600">About</a>
+        <a href="contact.html" data-link class="block text-gray-600">Contact</a>
+        <a href="blog.html" data-link class="block text-gray-600">Blog</a>
+        <a href="social.html" data-link class="block text-gray-600">Social Media</a>
       </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
-        <div class="container mx-auto px-4 py-4 space-y-4">
-          <a href="/" data-link class="block text-gray-600">Home</a>
-          <a href="services.html" data-link class="block text-gray-600"
-            >Services</a
-          >
-          <a href="about.html" data-link class="block text-gray-600">About</a>
-          <a href="contact.html" data-link class="block text-gray-600"
-            >Contact</a
-          >
-          <a href="blog.html" data-link class="block text-gray-600">Blog</a>
-          <a href="social.html" data-link class="block text-gray-600"
-            >Social Media</a
-          >
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main id="root" class="pt-24">
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            About Applied Physio
+          </h1>
+          <p class="text-xl text-gray-600">
+            Dedicated to helping you achieve optimal physical health through
+            expert care and personalized treatment.
+          </p>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Main content area -->
-    <main id="root" class="pt-24">
-      <!-- Hero Section -->
-      <section class="pt-24 pb-12 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">
-              About Applied Physio
-            </h1>
-            <p class="text-xl text-gray-600">
-              Dedicated to helping you achieve optimal physical health through
-              expert care and personalized treatment.
+    <!-- Mission & Values -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+            <p class="text-gray-600 mb-6">
+              At Applied Physio, our mission is to provide exceptional
+              physiotherapy care that empowers our patients to achieve their
+              optimal physical health and well-being. We believe in a holistic
+              approach to treatment that considers each patient's unique needs
+              and goals.
             </p>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <i class="fas fa-heart text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold">Patient-Centered Care</h3>
+                  <p class="text-gray-600">
+                    Tailored treatment plans for each individual
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <i class="fas fa-certificate text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold">Excellence</h3>
+                  <p class="text-gray-600">
+                    Commitment to highest quality care
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <i class="fas fa-users text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold">Community</h3>
+                  <p class="text-gray-600">Building lasting relationships</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://img.freepik.com/premium-photo/our-mission-is-written-white-notebook-light-background-near-notebook_380694-3452.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
+              alt="Our Mission" class="rounded-lg shadow-lg" />
+            <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg">
+              <p class="text-3xl font-bold">15+</p>
+              <p>Years of Excellence</p>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Mission & Values -->
-      <section class="py-16">
-        <div class="container mx-auto px-4">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
-              <p class="text-gray-600 mb-6">
-                At Applied Physio, our mission is to provide exceptional
-                physiotherapy care that empowers our patients to achieve their
-                optimal physical health and well-being. We believe in a holistic
-                approach to treatment that considers each patient's unique needs
-                and goals.
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="chandra_sekhar_mukherjee.png" alt="Team Member" class="w-full h-64 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Chandra Sekhar Mukherjee</h3>
+              <p class="text-blue-600 mb-4">Founder & Ergonomic Care Advisor</p>
+              <p class="text-gray-600 mb-4">
+                Specializing in ergonomic care advisory with over 5+ years of
+                experience.
               </p>
-              <div class="space-y-4">
-                <div class="flex items-center space-x-4">
-                  <div class="bg-blue-100 p-3 rounded-full">
-                    <i class="fas fa-heart text-blue-600"></i>
-                  </div>
-                  <div>
-                    <h3 class="font-bold">Patient-Centered Care</h3>
-                    <p class="text-gray-600">
-                      Tailored treatment plans for each individual
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                  <div class="bg-blue-100 p-3 rounded-full">
-                    <i class="fas fa-certificate text-blue-600"></i>
-                  </div>
-                  <div>
-                    <h3 class="font-bold">Excellence</h3>
-                    <p class="text-gray-600">
-                      Commitment to highest quality care
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                  <div class="bg-blue-100 p-3 rounded-full">
-                    <i class="fas fa-users text-blue-600"></i>
-                  </div>
-                  <div>
-                    <h3 class="font-bold">Community</h3>
-                    <p class="text-gray-600">Building lasting relationships</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="relative">
-              <img
-                src="https://img.freepik.com/premium-photo/our-mission-is-written-white-notebook-light-background-near-notebook_380694-3452.jpg?uid=R124957424&ga=GA1.1.689373160.1737052406&semt=ais_hybrid"
-                alt="Our Mission"
-                class="rounded-lg shadow-lg"
-              />
-              <div
-                class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg"
-              >
-                <p class="text-3xl font-bold">15+</p>
-                <p>Years of Excellence</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Team Section -->
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Team Member 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
-                src="chandra_sekhar_mukherjee.png"
-                alt="Team Member"
-                class="w-full h-64 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Chandra Sekhar Mukherjee</h3>
-                <p class="text-blue-600 mb-4">Founder & Ergonomic Care Advisor</p>
-                <p class="text-gray-600 mb-4">
-                  Specializing in ergonomic care advisory with over 5+ years of
-                  experience.
-                </p>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-gray-400 hover:text-blue-600"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-gray-400 hover:text-blue-600"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="#" class="text-gray-400 hover:text-blue-600"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
-                </div>
+          <!-- Team Member 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="doctor.jpeg" alt="Team Member" class="w-full h-64 object-contain" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Dr. S.N. Modak</h3>
+              <p class="text-blue-600 mb-4">Senior Physiotherapist</p>
+              <p class="text-gray-600 mb-4">
+                BPT, MPT (Ortho), MIAP (Physio), P.W. Hemophelia from CMC (Vellor).
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-youtube"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Team Member 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
-                src="doctor.jpeg"
-                alt="Team Member"
-                class="w-full h-64 object-contain"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Dr. S.N. Modak</h3>
-                <p class="text-blue-600 mb-4">Senior Physiotherapist</p>
-                <p class="text-gray-600 mb-4">
-                  BPT, MPT (Ortho),  MIAP (Physio), P.W. Hemophelia from CMC (Vellor).
-                </p>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-gray-400 hover:text-blue-600"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" class="text-gray-400 hover:text-blue-600"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Team Member 3
+          <!-- Team Member 3
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
               <img
                 src="/placeholder.svg?height=400&width=400"
@@ -290,138 +229,97 @@
               </div> -->
 
 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stats Section -->
-      <section class="py-16">
-        <div class="container mx-auto px-4">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-600 mb-2">7000+</p>
-              <p class="text-gray-600">Patients Treated</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-600 mb-2">15+</p>
-              <p class="text-gray-600">Years Experience</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-600 mb-2">98%</p>
-              <p class="text-gray-600">Success Rate</p>
-            </div>
-            <div class="text-center">
-              <p class="text-4xl font-bold text-blue-600 mb-2">24/7</p>
-              <p class="text-gray-600">Service Desk</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-xl font-bold mb-4">Applied Physio</h3>
-            <p class="text-gray-400">Professional physiotherapy services</p>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Quick Links</h4>
-            <ul class="space-y-2">
-              <li>
-                <a href="/" data-link class="text-gray-400 hover:text-white"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="about.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Services</h4>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="services.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >Manual Therapy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >Sports Rehabilitation</a
-                >
-              </li>
-              <li>
-                <a
-                  href="services.html"
-                  data-link
-                  class="text-gray-400 hover:text-white"
-                  >Physical Therapy</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Connect</h4>
-            <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-white"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
-        >
-        <p>&copy; 2025 Applied Physio. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-      function toggleMenu() {
-        const mobileMenu = document.getElementById("mobile-menu");
-        mobileMenu.classList.toggle("hidden");
-      }
-    </script>
-  </body>
+    <!-- Stats Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <p class="text-4xl font-bold text-blue-600 mb-2">7000+</p>
+            <p class="text-gray-600">Patients Treated</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl font-bold text-blue-600 mb-2">15+</p>
+            <p class="text-gray-600">Years Experience</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl font-bold text-blue-600 mb-2">98%</p>
+            <p class="text-gray-600">Success Rate</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl font-bold text-blue-600 mb-2">24/7</p>
+            <p class="text-gray-600">Service Desk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Applied Physio</h3>
+          <p class="text-gray-400">Professional physiotherapy services</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="/" data-link class="text-gray-400 hover:text-white">Home</a>
+            </li>
+            <li>
+              <a href="services.html" data-link class="text-gray-400 hover:text-white">Services</a>
+            </li>
+            <li>
+              <a href="about.html" data-link class="text-gray-400 hover:text-white">About</a>
+            </li>
+            <li>
+              <a href="contact.html" data-link class="text-gray-400 hover:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="services.html" data-link class="text-gray-400 hover:text-white">Manual Therapy</a>
+            </li>
+            <li>
+              <a href="services.html" data-link class="text-gray-400 hover:text-white">Sports Rehabilitation</a>
+            </li>
+            <li>
+              <a href="services.html" data-link class="text-gray-400 hover:text-white">Physical Therapy</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Connect</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Applied Physio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
 </html>
