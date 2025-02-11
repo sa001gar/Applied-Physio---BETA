@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f3dd60;
+            background-color: #f0f4f8;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,7 +16,7 @@
             text-align: center;
         }
         .thank-you-container {
-            background-color: rgb(215 243 192);
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             padding: 40px;
@@ -38,7 +38,7 @@
         }
         .btn {
             display: inline-block;
-            background-color: #028334;
+            background-color: #3498db;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
@@ -47,18 +47,13 @@
             transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #1fac55;
+            background-color: #2980b9;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
-    <script>
-        setTimeout(function() {
-            window.location.href = 'index.html'; // Change this to your main page URL
-        }, 3000);
-    </script>
 </head>
 <body>
     <div class="thank-you-container">
@@ -81,6 +76,9 @@
                 container.style.transform = 'scale(1)';
             });
 
+            if (window.navigator.sendBeacon) {
+                window.navigator.sendBeacon('https://appliedphysio.in/track-thankyou');
+            }
         });
     </script>
 </body>
